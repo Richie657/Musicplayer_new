@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view,
                                     int position, long id) {
                 Song song = (Song) listView.getItemAtPosition(position);
-                Intent nowPlaying = new Intent(view.getContext(), nowPlayingActivity.class);
+                Intent nowPlaying = new Intent(view.getContext(), NowPlayingActivity.class);
                 nowPlaying.putExtra("SONG_NAME", song.getmSongName());
                 nowPlaying.putExtra("ARTIST_NAME", song.getmArtistName());
                 startActivity(nowPlaying);

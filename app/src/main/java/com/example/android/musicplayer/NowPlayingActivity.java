@@ -8,7 +8,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class nowPlayingActivity extends AppCompatActivity {
+public class NowPlayingActivity extends AppCompatActivity {
 
     TextView nowPlaying_Artist;
 
@@ -35,7 +35,7 @@ public class nowPlayingActivity extends AppCompatActivity {
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(nowPlayingActivity.this, MainActivity.class);
+                Intent intent = new Intent(NowPlayingActivity.this, MainActivity.class);
                 startActivity(intent);
             }
         });
