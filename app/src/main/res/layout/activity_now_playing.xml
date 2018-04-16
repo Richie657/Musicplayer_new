@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.android.musicplayer.nowPlayingActivity">
+    tools:context="com.example.android.musicplayer.NowPlayingActivity">
 
     <TextView
         android:layout_width="match_parent"
@@ -19,7 +19,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/margin"
-        android:src="@drawable/album" />
+        android:src="@drawable/album"
+        tools:ignore="ContentDescription" />
 
     <TextView
         android:id="@+id/nowPlaying_text_view"
